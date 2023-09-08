@@ -1,0 +1,100 @@
+
+body.login {
+	background-color: #191f2a;
+	/* color: #c8c8c8; */
+}
+
+.login #backtoblog a,
+.login #nav a,
+.login h1 a {
+	/* color: #c8c8c8; */
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover {
+    color: brown;
+}
+
+#login {
+	/* margin-right: 80px; */
+}
+
+#login > p {
+	/* margin: 0;
+	padding: 24px; */
+	background-color: #c8c8c8;
+}
+
+#loginform {
+    position: relative;
+    border: none;
+	background-color: #c8c8c8;
+	color: #3c434a;
+}
+
+#loginform::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 8px;
+	width: 100%;
+	background-color: brown;
+}
+
+#wp-submit {
+	background-color: brown;
+	border-color: brown;
+	color: white;
+}
+
+#wp-submit:focus {
+	color: white;
+}
+
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
+    border-color: brown;
+    box-shadow: 0 0 0 1px brown;
+    outline: 2px solid transparent;
+}
+
+.login .button.wp-hide-pw:focus {
+    background: 0 0;
+    border-color: #3582c4;
+    border-color: brown;
+    box-shadow: 0 0 0 1px #3582c4;
+    box-shadow: 0 0 0 1px brown;
+    outline: 2px solid transparent;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+    color: #2271b1;
+    /* color: brown; */
+    /* border-color: #2271b1; */
+    border-color: brown;
+    background: #f6f7f7;
+    vertical-align: top;
+}
+
+.wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus {
+    background: #f6f7f7;
+    border-color: #3582c4;
+    border-color: brown;
+    color: #0a4b78;
+    color: brown;
+    box-shadow: 0 0 0 1px #3582c4;
+    box-shadow: 0 0 0 1px brown;
+    outline: 2px solid transparent;
+    outline-offset: 0;
+}
+
+#wp-submit.focus, .wp-core-ui #wp-submit:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px brown;
+}
+
+#language-switcher {
+	/* margin-right: 80px;
+    margin-left: auto;
+    width: 320px; */
+}
