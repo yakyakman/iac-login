@@ -1,29 +1,44 @@
 
+
+:root {
+	--iac-color: #af1e23;
+	--iac-color-dark: rgb(108, 22, 22);
+}
+
 body.login {
 	background-color: #191f2a;
 	/* color: #c8c8c8; */
 }
 
-.login #backtoblog a,
+/* .login #backtoblog a,
 .login #nav a,
 .login h1 a {
-	/* color: #c8c8c8; */
-}
+	color: #c8c8c8;
+} */
 
 .login #backtoblog a:hover,
 .login #nav a:hover,
 .login h1 a:hover {
-    color: brown;
+    color: var(--iac-color);
 }
 
-#login {
-	/* margin-right: 80px; */
-}
+/* #login {
+	margin-right: 80px;
+} */
 
-#login > p {
-	/* margin: 0;
-	padding: 24px; */
+/* #login > p {
+	margin: 0;
+	padding: 24px;
 	background-color: #c8c8c8;
+} */
+
+.login #backtoblog a, .login #nav a {
+    text-decoration: none;
+	color: #6081a2;
+}
+
+.language-switcher label {
+	color: #6081a2;
 }
 
 #loginform {
@@ -40,12 +55,12 @@ body.login {
 	left: 0;
 	height: 8px;
 	width: 100%;
-	background-color: brown;
+	background-color: var(--iac-color);
 }
 
 #wp-submit {
-	background-color: brown;
-	border-color: brown;
+	background-color: var(--iac-color);
+	border-color: var(--iac-color);
 	color: white;
 }
 
@@ -54,25 +69,29 @@ body.login {
 }
 
 input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
-    border-color: brown;
-    box-shadow: 0 0 0 1px brown;
+    border-color: var(--iac-color);
+    box-shadow: 0 0 0 1px var(--iac-color);
     outline: 2px solid transparent;
 }
 
 .login .button.wp-hide-pw:focus {
     background: 0 0;
     border-color: #3582c4;
-    border-color: brown;
+    border-color: var(--iac-color);
     box-shadow: 0 0 0 1px #3582c4;
-    box-shadow: 0 0 0 1px brown;
+    box-shadow: 0 0 0 1px var(--iac-color);
     outline: 2px solid transparent;
+}
+
+.login #backtoblog a:focus, .login #nav a:focus, .login h1 a:focus {
+    color: var(--iac-color);
 }
 
 .wp-core-ui .button, .wp-core-ui .button-secondary {
     color: #2271b1;
-    /* color: brown; */
-    /* border-color: #2271b1; */
-    border-color: brown;
+    color: var(--iac-color);
+    border-color: #2271b1;
+    border-color: var(--iac-color);
     background: #f6f7f7;
     vertical-align: top;
 }
@@ -80,21 +99,34 @@ input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, inp
 .wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus {
     background: #f6f7f7;
     border-color: #3582c4;
-    border-color: brown;
+    border-color: var(--iac-color);
     color: #0a4b78;
-    color: brown;
+    color: var(--iac-color-dark);
     box-shadow: 0 0 0 1px #3582c4;
-    box-shadow: 0 0 0 1px brown;
+    box-shadow: 0 0 0 1px var(--iac-color);
     outline: 2px solid transparent;
     outline-offset: 0;
 }
 
-#wp-submit.focus, .wp-core-ui #wp-submit:focus {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 3px brown;
+.wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover {
+    background: #f0f0f1;
+    border-color: #0a4b78;
+	border-color: var(--iac-color-dark);
+    color: #0a4b78;
+	color: var(--iac-color-dark);
 }
 
-#language-switcher {
-	/* margin-right: 80px;
-    margin-left: auto;
-    width: 320px; */
+.wp-core-ui select:hover {
+    color: #2271b1;
+	color: var(--iac-color);
 }
+
+#wp-submit.focus, .wp-core-ui #wp-submit:focus {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px var(--iac-color);
+}
+
+/* #language-switcher {
+	margin-right: 80px;
+    margin-left: auto;
+    width: 320px;
+} */
