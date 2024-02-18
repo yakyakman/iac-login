@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'reference' => '9ef65b9aa073a20067da6669e5d78a77e0dd9c91',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'reference' => '9ef65b9aa073a20067da6669e5d78a77e0dd9c91',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'abuyoyo/plugincore' => array(
+            'pretty_version' => '0.29',
+            'version' => '0.29.0.0',
+            'reference' => 'f8ace461397c711c62346c363a10f59d5f85c0dc',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../abuyoyo/plugincore',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'abuyoyo/wphelper-utility' => array(
+            'pretty_version' => '0.9',
+            'version' => '0.9.0.0',
+            'reference' => 'b7935c9f89cd0915ec62263f5b69629f5a40b392',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../abuyoyo/wphelper-utility',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
