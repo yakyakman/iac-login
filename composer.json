@@ -1,6 +1,6 @@
 {
 	"require": {
 		"abuyoyo/plugincore": "~0.26",
-		"abuyoyo/wphelper-utility": "~0.6"
+		"abuyoyo/wphelper-utility": "~0.9"
 	}
 }

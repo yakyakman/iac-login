@@ -1,0 +1,88 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f6cef480e1ea29bfcb18f8c99389bef2",
+    "packages": [
+        {
+            "name": "abuyoyo/plugincore",
+            "version": "0.29",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abuyoyo/PluginCore.git",
+                "reference": "f8ace461397c711c62346c363a10f59d5f85c0dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abuyoyo/PluginCore/zipball/f8ace461397c711c62346c363a10f59d5f85c0dc",
+                "reference": "f8ace461397c711c62346c363a10f59d5f85c0dc",
+                "shasum": ""
+            },
+            "suggest": {
+                "abuyoyo/adminmenupage": "~0.33",
+                "yahnis-elsts/plugin-update-checker": "~5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WPHelper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "WordPress plugin core helper class",
+            "support": {
+                "issues": "https://github.com/abuyoyo/PluginCore/issues",
+                "source": "https://github.com/abuyoyo/PluginCore/tree/0.29"
+            },
+            "time": "2024-02-22T00:00:00+00:00"
+        },
+        {
+            "name": "abuyoyo/wphelper-utility",
+            "version": "0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abuyoyo/wphelper-utility.git",
+                "reference": "b7935c9f89cd0915ec62263f5b69629f5a40b392"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abuyoyo/wphelper-utility/zipball/b7935c9f89cd0915ec62263f5b69629f5a40b392",
+                "reference": "b7935c9f89cd0915ec62263f5b69629f5a40b392",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "WPHelper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "WPHelper Utility classes and functions.",
+            "support": {
+                "issues": "https://github.com/abuyoyo/wphelper-utility/issues",
+                "source": "https://github.com/abuyoyo/wphelper-utility/tree/0.9"
+            },
+            "time": "2024-03-09T07:01:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
