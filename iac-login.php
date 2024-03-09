@@ -3,7 +3,7 @@
  * Plugin Name: IAC Login
  * Description: IAC Branding for login page.
  * Author: abuyoyo
- * Version: 0.2
+ * Version: 0.3
  */
 
 // vendor/autoload
