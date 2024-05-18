@@ -1,0 +1,4 @@
+#wpadminbar #wp-admin-bar-site-name > a.ab-item {
+    line-height: var(--wp-admin--admin-bar--height);
+    font-size: 1.6em;
+}
