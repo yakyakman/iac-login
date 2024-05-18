@@ -31,6 +31,6 @@ require_once 'Login_Page.php';
 new WPHelper\PluginCore(__FILE__);
 
 function iac_login_config() {
-	new IAC_Login\Login_Page();
+	IAC_Login\Login_Page::init();
 }
 add_action( 'plugins_loaded', 'iac_login_config');
