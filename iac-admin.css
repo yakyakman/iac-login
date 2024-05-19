@@ -2,3 +2,8 @@
     line-height: var(--wp-admin--admin-bar--height);
     font-size: 1.6em;
 }
+
+/* Fix plugin Debug Bar Constants colors when using Query Monitor dark mode */
+.db-pretty-var * {
+    color: var(--qm-container-fg) !important;
+}
