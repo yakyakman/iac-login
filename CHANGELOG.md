@@ -1,5 +1,11 @@
 # IAC Login Changelog
 
+## 0.4
+Release Date: 15 May 2024
+
+### Added
+- Add custom IAC stylesheet to all admin pages.
+
 ## 0.3
 Release Date: 9 Mar 2024
 
