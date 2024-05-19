@@ -3,7 +3,7 @@
  * Plugin Name: IAC Login
  * Description: IAC Branding for login page.
  * Author: abuyoyo
- * Version: 0.3
+ * Version: 0.3-dev
  */
 
 // vendor/autoload
@@ -27,10 +27,12 @@ if ( ! class_exists('WPHelper\PluginCore') || ! trait_exists('WPHelper\Utility\S
 }
 
 require_once 'Login_Page.php';
+require_once 'IAC_Admin_Style.php';
 
 new WPHelper\PluginCore(__FILE__);
 
 function iac_login_config() {
-	new IAC_Login\Login_Page();
+	IAC_Login\Login_Page::init();
+	IAC_Login\IAC_Admin_Style::init();
 }
 add_action( 'plugins_loaded', 'iac_login_config');
