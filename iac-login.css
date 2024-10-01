@@ -3,10 +3,12 @@
 :root {
 	--iac-color: #af1e23;
 	--iac-color-dark: rgb(108, 22, 22);
+
+	--iac-color-background-dark: #191f2a;
 }
 
 body.login {
-	background-color: #191f2a;
+	background-color: var(--iac-color-background-dark);
 	/* color: #c8c8c8; */
 }
 
