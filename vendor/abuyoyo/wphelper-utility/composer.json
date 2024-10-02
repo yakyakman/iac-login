@@ -2,7 +2,7 @@
 	"name": "abuyoyo/wphelper-utility",
 	"description": "WPHelper Utility classes and functions.",
 	"type": "library",
-	"version": "0.9",
+	"version": "0.12",
 	"license": "BSD-3-Clause",
 	"autoload": {
 		"psr-4": {

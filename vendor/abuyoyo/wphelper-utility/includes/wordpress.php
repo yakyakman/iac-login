@@ -3,7 +3,7 @@
 /**
  * WordPress utility/polyfill-y-ish functions
  * 
- * Useful functios that wp-core should provide but doesn't
+ * Useful functions that wp-core should provide but doesn't
  */
 
 if ( ! function_exists( 'wp_strtotime' ) ):

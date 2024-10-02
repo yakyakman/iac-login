@@ -83,4 +83,5 @@ endif;
 include 'bespoke/wph_print_table.php';
 include 'bespoke/wph_card.php';
 include 'bespoke/wph_pre_print.php';
+include 'bespoke/wph_pre_dump.php';
 include 'bespoke/wph_no_js_meta_box.php';

@@ -1,4 +1,9 @@
 <?php
+// skip polyfill
+if ( defined( 'WPHELPER_JSON_MAX_DEPTH' ) ){
+	return;
+}
+
 const WPHELPER_JSON_MAX_DEPTH = 0x7FFFFFFF; // see https://www.php.net/manual/en/function.json-decode.php
 
 if ( ! function_exists( 'json_validate' ) ):
