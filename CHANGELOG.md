@@ -1,5 +1,17 @@
 # IAC Login Changelog
 
+## 1.0
+Release Date: 2 Oct 2024
+
+### Fixed
+- Fix css height:98% "Scrollbar fix" in `wp-auth-check` iframe.
+
+### Changed
+- IAC Admin stylesheet - All labels are "clickable" (pointer: cursor).
+
+### Dependencies
+- Composer config: `prepend-autoloader: false` - Give precedence to other composer installations if present.
+
 ## 0.4
 Release Date: 15 May 2024
 
