@@ -7,3 +7,8 @@
 .db-pretty-var * {
     color: var(--qm-container-fg) !important;
 }
+
+/* Show "Clickable" label on all (most?) WP admin pages */
+.wrap label {
+	cursor: pointer;
+}

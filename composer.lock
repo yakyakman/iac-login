@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "abuyoyo/plugincore",
-            "version": "0.29",
+            "version": "0.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abuyoyo/PluginCore.git",
-                "reference": "f8ace461397c711c62346c363a10f59d5f85c0dc"
+                "reference": "a56f46b64ebdd4e560ce80153860c1f1fd9c33de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abuyoyo/PluginCore/zipball/f8ace461397c711c62346c363a10f59d5f85c0dc",
-                "reference": "f8ace461397c711c62346c363a10f59d5f85c0dc",
+                "url": "https://api.github.com/repos/abuyoyo/PluginCore/zipball/a56f46b64ebdd4e560ce80153860c1f1fd9c33de",
+                "reference": "a56f46b64ebdd4e560ce80153860c1f1fd9c33de",
                 "shasum": ""
             },
             "suggest": {
@@ -37,22 +37,22 @@
             "description": "WordPress plugin core helper class",
             "support": {
                 "issues": "https://github.com/abuyoyo/PluginCore/issues",
-                "source": "https://github.com/abuyoyo/PluginCore/tree/0.29"
+                "source": "https://github.com/abuyoyo/PluginCore/tree/0.31"
             },
-            "time": "2024-02-22T00:00:00+00:00"
+            "time": "2024-06-22T00:00:00+00:00"
         },
         {
             "name": "abuyoyo/wphelper-utility",
-            "version": "0.9",
+            "version": "0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abuyoyo/wphelper-utility.git",
-                "reference": "b7935c9f89cd0915ec62263f5b69629f5a40b392"
+                "reference": "8e2f8ea1fb4913ec4a7a150d3e05a344308c6ff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abuyoyo/wphelper-utility/zipball/b7935c9f89cd0915ec62263f5b69629f5a40b392",
-                "reference": "b7935c9f89cd0915ec62263f5b69629f5a40b392",
+                "url": "https://api.github.com/repos/abuyoyo/wphelper-utility/zipball/8e2f8ea1fb4913ec4a7a150d3e05a344308c6ff9",
+                "reference": "8e2f8ea1fb4913ec4a7a150d3e05a344308c6ff9",
                 "shasum": ""
             },
             "type": "library",
@@ -71,9 +71,9 @@
             "description": "WPHelper Utility classes and functions.",
             "support": {
                 "issues": "https://github.com/abuyoyo/wphelper-utility/issues",
-                "source": "https://github.com/abuyoyo/wphelper-utility/tree/0.9"
+                "source": "https://github.com/abuyoyo/wphelper-utility/tree/0.12"
             },
-            "time": "2024-03-09T07:01:38+00:00"
+            "time": "2024-06-14T01:02:06+00:00"
         }
     ],
     "packages-dev": [],

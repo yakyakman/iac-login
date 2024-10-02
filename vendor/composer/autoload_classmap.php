@@ -7,4 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'WPHelper\\PluginCore' => $vendorDir . '/abuyoyo/plugincore/PluginCore.php',
+    'WPHelper\\Utility\\PluginCoreStaticWrapper' => $vendorDir . '/abuyoyo/wphelper-utility/Utility/PluginCoreStaticWrapper.php',
+    'WPHelper\\Utility\\Singleton' => $vendorDir . '/abuyoyo/wphelper-utility/Utility/Singleton.php',
 );

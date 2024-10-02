@@ -30,6 +30,8 @@ class Login_Page {
 
 		add_filter( 'login_site_html_link', '__return_empty_string' );
 		
+		// run late - just pass-through
+		add_filter( 'wp_auth_check_load', [ $this, 'wp_auth_check_load' ], 20, 2 );
 	}
 
 	/**
@@ -60,4 +62,24 @@ class Login_Page {
 		wp_enqueue_style( 'iac-login', IAC_LOGIN_URL . 'iac-login.css' );
 	}
 
+	/**
+	 * Add IAC-Login stylesheet to wp_auth_check pages.
+	 * 
+	 * This is a fix to WordPress core's absurd height:98% iframe "Scrollbar fix". {@see wp-auth-check.css}
+	 * We don't mess with the authentication check. Just pass-through.
+	 *
+	 * Returning a falsey value from the filter will effectively short-circuit
+	 * loading the authentication check. {@see wp_auth_check_load()}
+	 * 
+	 * @since 0.5
+	 *
+	 * @param bool      $show   Whether to load the authentication check.
+	 * @param WP_Screen $screen The current screen object.
+	 */
+	function wp_auth_check_load( $show, $screen ) {
+		if ($show){
+			$this->iac_login_stylesheet();
+		}
+		return $show;
+	}
 }

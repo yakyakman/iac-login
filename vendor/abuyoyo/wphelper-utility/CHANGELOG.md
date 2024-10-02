@@ -2,6 +2,36 @@
 
 All notable changes to WPHelper\Utility library since version 0.1
 
+## [0.12](https://github.com/abuyoyo/wphelper-utility/releases/tag/0.12/)
+Release Date: Jun 14 2024
+
+### Added
+- Trait method:
+  - Utility method `PluginCoreStaticWrapper::cache_buster()` returns cache-buster string. Plugin version on production. Timestamp otherwise.
+
+### Fixed
+- Fix `PHP Warning: Constant WPHELPER_JSON_MAX_DEPTH already defined` when multiple WPHelper\Utility libraries are available.
+
+### Internal
+- Move PHP polyfill functions to dedicated "include" files.
+- PluginCoreStaticWrapper - protected methods and variables.
+
+## [0.11](https://github.com/abuyoyo/wphelper-utility/releases/tag/0.11/)
+Release Date: May 23 2024
+
+### Added
+- Trait method:
+  - Getter method `PluginCoreStaticWrapper::plugin_core()` returns PluginCore instance.
+
+## [0.10](https://github.com/abuyoyo/wphelper-utility/releases/tag/0.10/)
+Release Date: Apr 8 2024
+
+### Added
+- Trait:
+  - `PluginCoreStaticWrapper` - Allow plugins using `WPHelper\PluginCore` static access to methods like `path`, `url`, `version` etc.
+- Bespoke utility:
+  - `wph_pre_dump()` - Print `var_dump()` output in HTML `pre` tag.
+
 ## [0.9](https://github.com/abuyoyo/wphelper-utility/releases/tag/0.9/)
 Release Date: Mar 9 2024
 
@@ -84,7 +114,7 @@ Release Date: Apr 10 2021
 - WordPress Admin utility functions:
   - `wp_admin_get_post_type()` - get_post_type that works on admin side.
   - `wp_get_current_admin_url()` - get url of current admin page.
-- WordPress utiliy functions:
+- WordPress utility functions:
   - `wp_strtotime()` - strtotime-like function that uses wp_timezone.
 - Utility functions:
   - `get_http_response_code()` - get HTTP response status of url.
