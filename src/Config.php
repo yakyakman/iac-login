@@ -3,6 +3,7 @@
 namespace IAC_Login;
 
 use WPHelper\Utility\Singleton;
+use WPHelper\Utility\PluginCoreStaticWrapper;
 
 /**
  * IAC_Login\Config
@@ -14,14 +15,17 @@ use WPHelper\Utility\Singleton;
  */
 class Config {
 	use Singleton;
+	use PluginCoreStaticWrapper;
 
 	/**
 	 * Constructor/Init
 	 * 
 	 * @since 1.1
 	 */
-	public function __construct()
+	public function __construct( $plugin_core )
 	{
+
+		self::set_plugin_core( $plugin_core );
 
 		Login_Page::init();
 

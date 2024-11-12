@@ -13,6 +13,8 @@ if (
 		! class_exists( 'WPHelper\PluginCore' )
 		||
 		! trait_exists( 'WPHelper\Utility\Singleton' )
+		||
+		! trait_exists( 'WPHelper\Utility\PluginCoreStaticWrapper' )
 	)
 	&&
 	file_exists( __DIR__ . '/vendor/autoload.php' )
@@ -25,6 +27,8 @@ if (
 	! class_exists( 'WPHelper\PluginCore' )
 	||
 	! trait_exists( 'WPHelper\Utility\Singleton' )
+	||
+	! trait_exists( 'WPHelper\Utility\PluginCoreStaticWrapper' )
 ) {
 	return;
 }
@@ -33,4 +37,4 @@ new WPHelper\PluginCore(__FILE__);
 
 require_once __DIR__ . '/autoload.php';
 
-add_action( 'plugins_loaded', [ IAC_Login\Config::class, 'init' ] );
+add_action( 'plugins_loaded', fn() => IAC_Login\Config::init( __FILE__ ) );
