@@ -29,13 +29,8 @@ if (
 	return;
 }
 
-require_once 'Login_Page.php';
-require_once 'IAC_Admin_Style.php';
-
 new WPHelper\PluginCore(__FILE__);
 
-function iac_login_config() {
-	IAC_Login\Login_Page::init();
-	IAC_Login\IAC_Admin_Style::init();
-}
-add_action( 'plugins_loaded', 'iac_login_config');
+require_once __DIR__ . '/autoload.php';
+
+add_action( 'plugins_loaded', [ IAC_Login\Config::class, 'init' ] );
