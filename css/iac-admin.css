@@ -4,6 +4,18 @@
     font-size: 1.6em;
 }
 
+/* Favicon on site ID */
+#wpadminbar #wp-admin-bar-site-name > .ab-item:before {
+	content: "" !important;
+	background-image: url(/favicon.ico) !important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	top: 4px;
+	width: 24px;
+	height: 24px;
+}
+
 /* Fix plugin Debug Bar Constants colors when using Query Monitor dark mode */
 .db-pretty-var * {
     color: var(--qm-container-fg) !important;
