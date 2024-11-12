@@ -34,7 +34,7 @@ class IAC_Admin_Style {
 	 * @since 0.4
 	 */
 	function enqueue_iac_admin_style() {
-		wp_enqueue_style( 'iac-admin', IAC_LOGIN_URL . 'iac-admin.css' );
+		wp_enqueue_style( 'iac-admin', Config::url( 'css/iac-admin.css' ) );
 	}
 
 }

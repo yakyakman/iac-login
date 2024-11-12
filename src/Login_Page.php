@@ -59,7 +59,7 @@ class Login_Page {
 	 * @since 0.1
 	 */
 	function iac_login_stylesheet() {
-		wp_enqueue_style( 'iac-login', IAC_LOGIN_URL . 'iac-login.css' );
+		wp_enqueue_style( 'iac-login', Config::url( 'css/iac-login.css' ) );
 	}
 
 	/**
