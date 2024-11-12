@@ -33,8 +33,14 @@ if (
 	return;
 }
 
-new WPHelper\PluginCore(__FILE__);
-
 require_once __DIR__ . '/autoload.php';
+
+new WPHelper\PluginCore(
+	__FILE__,
+	[
+		'activate_cb'   => [ IAC_Login\Config::class, 'activate' ],
+		'deactivate_cb' => [ IAC_Login\Config::class, 'deactivate' ],
+	]
+);
 
 add_action( 'plugins_loaded', fn() => IAC_Login\Config::init( __FILE__ ) );

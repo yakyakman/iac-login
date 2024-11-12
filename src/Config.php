@@ -33,4 +33,48 @@ class Config {
 
 	}
 
+	/**
+	 * Plugin Activate
+	 * Create Maintenance Drop-In.
+	 * 
+	 * @since 1.1
+	 */
+	public static function activate() {
+		$target = WP_CONTENT_DIR . '/maintenance.php';
+		$origin = IAC_LOGIN_DIR . 'wp-content/maintenance.php';
+
+		if ( defined( 'DISALLOW_FILE_MODS' ) && DISALLOW_FILE_MODS ) {
+			return;
+		}
+
+		if ( ! file_exists( $origin ) ){
+			trigger_error(__( 'File ' . $target . ' does not exists.' ), E_USER_ERROR);
+		}
+
+		if ( function_exists( 'symlink' ) ) {
+			$success = @symlink( $origin, $target );
+		}
+
+		if ( ! function_exists( 'symlink' ) || ! $success ) {
+			copy( $origin, $target);
+		}
+		
+		// if ( ! file_exists( $target ) ) {
+		// 	@trigger_error(__( 'Failed to create Maintenance drop-in.' ), E_USER_ERROR);
+		// }
+	}
+
+
+	/**
+	 * Plugin Deactivate
+	 * Delete Maintenance Drop-In.
+	 * 
+	 * @since 1.1
+	 */
+	public static function deactivate() {
+		$target = WP_CONTENT_DIR . '/maintenance.php';
+		if ( file_exists( $target ) ) {
+			@unlink( $target );
+		}
+	}
 }
