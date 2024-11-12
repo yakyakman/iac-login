@@ -22,6 +22,7 @@ class IAC_Admin_Style {
 	 */
 	public function __construct()
 	{
+		add_action( 'wp_enqueue_scripts',    [ $this, 'enqueue_iac_admin_style' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_iac_admin_style' ] );
 	}
 
