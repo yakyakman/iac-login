@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: IAC Login
- * Description: IAC Branding for login page.
+ * Description: IAC Branding for login page, admin dashboard and toolbar.
  * Author: abuyoyo
  * Version: 1.0
  */
