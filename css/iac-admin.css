@@ -25,3 +25,8 @@
 .wrap label {
 	cursor: pointer;
 }
+
+/* CMB2/WPHelper override */
+.cmb2-options-page:is(.wph-wrap) {
+	max-width: unset;
+}
