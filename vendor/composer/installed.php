@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => 'dev-develop',
-        'version' => 'dev-develop',
-        'reference' => '2c5f64c86898cd7355624c18de70473c0bd1d602',
+        'pretty_version' => 'dev-next',
+        'version' => 'dev-next',
+        'reference' => '7cee9d82e6e9fbadf6563126a6cd366c2ad79b4c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-develop',
-            'version' => 'dev-develop',
-            'reference' => '2c5f64c86898cd7355624c18de70473c0bd1d602',
+            'pretty_version' => 'dev-next',
+            'version' => 'dev-next',
+            'reference' => '7cee9d82e6e9fbadf6563126a6cd366c2ad79b4c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'abuyoyo/plugincore' => array(
-            'pretty_version' => '0.31',
-            'version' => '0.31.0.0',
-            'reference' => 'a56f46b64ebdd4e560ce80153860c1f1fd9c33de',
+            'pretty_version' => '0.32',
+            'version' => '0.32.0.0',
+            'reference' => 'd50b14892249cbae5ce3e1b649d49cfdca48ea6e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../abuyoyo/plugincore',
             'aliases' => array(),

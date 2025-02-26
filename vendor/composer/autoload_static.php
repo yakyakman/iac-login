@@ -20,16 +20,13 @@ class ComposerStaticInitba82a53338fb86da060da08711ab2288
     public static $prefixDirsPsr4 = array (
         'WPHelper\\' => 
         array (
-            0 => __DIR__ . '/..' . '/abuyoyo/plugincore',
-            1 => __DIR__ . '/..' . '/abuyoyo/wphelper-utility',
+            0 => __DIR__ . '/..' . '/abuyoyo/wphelper-utility',
+            1 => __DIR__ . '/..' . '/abuyoyo/plugincore',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'WPHelper\\PluginCore' => __DIR__ . '/..' . '/abuyoyo/plugincore/PluginCore.php',
-        'WPHelper\\Utility\\PluginCoreStaticWrapper' => __DIR__ . '/..' . '/abuyoyo/wphelper-utility/Utility/PluginCoreStaticWrapper.php',
-        'WPHelper\\Utility\\Singleton' => __DIR__ . '/..' . '/abuyoyo/wphelper-utility/Utility/Singleton.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
