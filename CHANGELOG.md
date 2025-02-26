@@ -1,5 +1,21 @@
 # IAC Login Changelog
 
+## [1.1](https://github.com/yakyakman/iac-login/releases/tag/1.1/)
+Release Date: 26 Feb 2025
+
+### Added
+- Drop-in `maintenance.php`. IAC branded maintenance mode page.
+
+### Changed
+- Style - show favicon on toolbar site ID.
+- Style - override CMB2/WPHelper styling.
+
+### Internal
+- Connect to github repo.
+- PluginCore update-checker.
+- Github workflow action - create release on tag push.
+- Add `wph-required-plugins.json`. Require plugin `notice-manager`.
+
 ## 1.0
 Release Date: 2 Oct 2024
 

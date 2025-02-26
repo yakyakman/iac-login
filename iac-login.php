@@ -1,9 +1,11 @@
 <?php
 /**
  * Plugin Name: IAC Login
- * Description: IAC Branding for login page.
+ * Description: IAC Branding for login page, admin dashboard and toolbar.
  * Author: abuyoyo
- * Version: 1.0
+ * Version: 1.1
+ * Release Date: 26-02-2025
+ * Update URI: https://github.com/yakyakman/iac-login
  */
 
 // vendor/autoload
@@ -13,26 +15,35 @@ if (
 		! class_exists( 'WPHelper\PluginCore' )
 		||
 		! trait_exists( 'WPHelper\Utility\Singleton' )
+		||
+		! trait_exists( 'WPHelper\Utility\PluginCoreStaticWrapper' )
 	)
 	&&
 	file_exists( __DIR__ . '/vendor/autoload.php' )
-	
 ) {
 	require_once __DIR__ . '/vendor/autoload.php';
 }
 
 // Fail gracefully
-if ( ! class_exists('WPHelper\PluginCore') || ! trait_exists('WPHelper\Utility\Singleton') ) {
+if (
+	! class_exists( 'WPHelper\PluginCore' )
+	||
+	! trait_exists( 'WPHelper\Utility\Singleton' )
+	||
+	! trait_exists( 'WPHelper\Utility\PluginCoreStaticWrapper' )
+) {
 	return;
 }
 
-require_once 'Login_Page.php';
-require_once 'IAC_Admin_Style.php';
+require_once __DIR__ . '/autoload.php';
 
-new WPHelper\PluginCore(__FILE__);
+new WPHelper\PluginCore(
+	__FILE__,
+	[
+		'activate_cb'    => [ IAC_Login\Config::class, 'activate' ],
+		'deactivate_cb'  => [ IAC_Login\Config::class, 'deactivate' ],
+		'update_checker' => [ 'auth'=> $yakyakman_oauth ?? null ],
+	]
+);
 
-function iac_login_config() {
-	IAC_Login\Login_Page::init();
-	IAC_Login\IAC_Admin_Style::init();
-}
-add_action( 'plugins_loaded', 'iac_login_config');
+add_action( 'plugins_loaded', fn() => IAC_Login\Config::init( __FILE__ ) );
