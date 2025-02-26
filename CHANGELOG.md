@@ -1,5 +1,11 @@
 # IAC Login Changelog
 
+## [1.3](https://github.com/yakyakman/iac-login/releases/tag/1.3/)
+Release Date: 26 Feb 2025
+
+### Fixed
+- Bump plugin minor version. Fixes update checker.
+
 ## [1.1.2](https://github.com/yakyakman/iac-login/releases/tag/1.1.2/)
 Release Date: 26 Feb 2025
 
