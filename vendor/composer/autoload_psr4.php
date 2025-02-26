@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'WPHelper\\' => array($vendorDir . '/abuyoyo/plugincore', $vendorDir . '/abuyoyo/wphelper-utility'),
+    'WPHelper\\' => array($vendorDir . '/abuyoyo/wphelper-utility', $vendorDir . '/abuyoyo/plugincore'),
 );
