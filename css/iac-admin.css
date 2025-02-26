@@ -1,0 +1,32 @@
+/* Larger font on site ID */
+#wpadminbar #wp-admin-bar-site-name > a.ab-item {
+    line-height: var(--wp-admin--admin-bar--height);
+    font-size: 1.6em;
+}
+
+/* Favicon on site ID */
+#wpadminbar #wp-admin-bar-site-name > .ab-item:before {
+	content: "" !important;
+	background-image: url(/favicon.ico) !important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	top: 4px;
+	width: 24px;
+	height: 24px;
+}
+
+/* Fix plugin Debug Bar Constants colors when using Query Monitor dark mode */
+.db-pretty-var * {
+    color: var(--qm-container-fg) !important;
+}
+
+/* Show "Clickable" label on all (most?) WP admin pages */
+.wrap label {
+	cursor: pointer;
+}
+
+/* CMB2/WPHelper override */
+.cmb2-options-page:is(.wph-wrap) {
+	max-width: unset;
+}

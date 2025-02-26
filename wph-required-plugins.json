@@ -1,0 +1,5 @@
+{
+	"require": [
+		"notice-manager/notice-manager.php"
+	]
+}
