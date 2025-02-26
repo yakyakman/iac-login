@@ -3,7 +3,7 @@
  * Plugin Name: IAC Login
  * Description: IAC Branding for login page, admin dashboard and toolbar.
  * Author: abuyoyo
- * Version: 1.1
+ * Version: 1.2
  * Release Date: 26-02-2025
  * Update URI: https://github.com/yakyakman/iac-login
  */
