@@ -4,6 +4,7 @@
  * Description: IAC Branding for login page, admin dashboard and toolbar.
  * Author: abuyoyo
  * Version: 1.0
+ * Update URI: https://github.com/yakyakman/iac-login
  */
 
 // vendor/autoload
@@ -38,8 +39,9 @@ require_once __DIR__ . '/autoload.php';
 new WPHelper\PluginCore(
 	__FILE__,
 	[
-		'activate_cb'   => [ IAC_Login\Config::class, 'activate' ],
-		'deactivate_cb' => [ IAC_Login\Config::class, 'deactivate' ],
+		'activate_cb'    => [ IAC_Login\Config::class, 'activate' ],
+		'deactivate_cb'  => [ IAC_Login\Config::class, 'deactivate' ],
+		'update_checker' => [ 'auth'=> $yakyakman_oauth ?? null ],
 	]
 );
 
